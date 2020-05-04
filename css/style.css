@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 a{
 	text-decoration: none;
 }
@@ -42,3 +44,222 @@ body{
 	color: white;
 	cursor: pointer;
 }
+
+.technology{
+	background-color: #f5f8fd;
+	padding: 100px 7px;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.technology .container{
+	max-width: 1140px;
+	margin: auto;
+}
+
+.technology .container .row{
+	display: flex;
+	flex-wrap: wrap; 
+}
+
+.technology .container .row .section-title{
+	flex: 0 0 100%;
+	max-width: 100%;
+	margin-bottom: 40px;
+}
+
+.technology .container .row .section-title h1{
+	display: inline-block;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 700px;
+	color: #000000;
+	margin: 0 0 10px;
+	position: relative;
+}
+
+.technology .container .row .section-title h1:before{
+    content: '';
+    left: 0;
+    height: 2px;
+    position: absolute;
+    width: 50%;
+    background-color: #febd01;
+    right: 0px;
+    bottom: 0px;
+    left: 22%;
+}
+
+.technology .filter-buttons{
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+.technology .filter-buttons ul{
+	text-align: center;
+	padding: 0;
+	margin-bottom: 25px;
+}
+
+.technology .filter-buttons ul li{
+	color: #000000;
+	font-weight: 500;
+	font-size: 16px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0px 8px;
+	padding-bottom: 0px;
+}
+
+.technology .filter-buttons ul li.active{
+	color: #febd01;
+	border-bottom: 2px solid #febd01;
+}
+
+.technology .technology-gallery{
+	flex: 0 0 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.technology .technology-gallery .item{
+	display: block;
+	flex: 0 0 30%;
+	max-width: 30%;
+	position: relative;
+	padding: 8px;
+}
+
+.technology .technology-gallery .item .inner{
+	position: relative;
+}
+
+.technology .technology-gallery .item img{
+	width: 100%;
+	display: block;
+}
+
+.technology .technology-gallery .item .overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 10;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: all .5s ease;
+}
+
+.technology .technology-gallery .item:hover .overlay{
+	opacity: 1;
+}
+
+.technology .technology-gallery .item .overlay .fa{
+	height: 50px;
+	width: 50px;
+	color: #ffffff;
+	background-color: #febd01;
+	display: inline-block;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.technology .technology-gallery .item:hover .overlay .fa{
+	-webkit-animation: galleryIcon .8s ease;
+	animation: galleryIcon .8s ease;
+}
+
+@keyframes galleryIcon{
+	0%{
+		transform: translateY(-20px);;
+		opacity: 0;
+	}
+
+	100%{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.technology .technology-gallery .item .overlay h4{
+	margin-top: 15px;
+	font-size: 25px;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.technology .technology-gallery .item:hover .overlay h4{
+	-webkit-animation: galleryText .8s ease;
+	animation: galleryText .8s ease;
+}
+
+@keyframes galleryText{
+	0%{
+		transform: translateY(20px);
+		opacity: 0;
+	}
+
+	100%{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+/*Technology Section Ends Here*/
+
+/*Lightbox Starts Here*/
+.lightbox{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.6);
+	justify-content: center;
+	align-items: center;
+}
+
+.lightbox.show{
+	display: flex;
+}
+
+.lightbox.hide{
+	display: none;
+}
+
+.lightbox .close-lightbox{
+	height: 35px;
+	width: 35px;
+	background-color: #ffffff;
+	color: #febd01;
+	text-align: center;
+	line-height: 35px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	border-radius: 50%;
+	z-index: 101;
+}
+
+.lightbox img{
+	max-width: 90%;
+	max-height: 80%;
+	display: block;
+}
+/*Lightbox Ends Here*/
