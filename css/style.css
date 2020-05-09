@@ -262,3 +262,23 @@ body{
 	display: block;
 }
 /*Lightbox Ends Here*/
+
+@media (max-width: 767px){
+	.technology .technology-gallery .item {
+		display: block;
+		flex: 0 0 45%;
+		max-width: 45%;
+		position: relative;
+	}
+}
+
+
+
+@media (max-width: 500px){
+	.technology .technology-gallery .item{
+		display: block;
+		flex: 0 0 100%;
+		max-width: 100%;
+		position: relative;
+	}
+}
