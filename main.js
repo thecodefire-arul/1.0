@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-  $("#link").click(function(){
+  $("#button").click(function(){
     $("#navbar").hide(1000);
     $("#menu").show(1000);
   });

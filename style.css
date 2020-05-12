@@ -34,6 +34,28 @@
     /*margin-right: -20%;*/
 }
 
+#navbar .button{
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: -15%;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #111111;
+    cursor: pointer;
+}
+
+#navbar .button .fa{
+    line-height: 23px;
+    font-size: 15px;
+    /*display: none;*/
+    color: red;
+    font-weight: 700;
+}
+
 #navbar .container{
     text-align: center;
     padding: 20px;
@@ -58,12 +80,8 @@
     margin-bottom: 20px;
 }
 
-.menu .fa:active{
-    animation: navbar;
-}
-
-@keyframes navbar{
+@media (max-width: 770px){
     #navbar{
-        display: block;
+        height: 100%;
     }
 }
