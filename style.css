@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Cookie);
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
 *{
@@ -13,6 +14,7 @@
     padding: 30px;
     position: fixed;
     opacity: 1;
+    position: fixed;
 }
 
 .menu .fa{
@@ -28,7 +30,7 @@
     width: 20%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background: linear-gradient(to right, #CC2B5E, #733A88);
+    background: transparent;
     font-family: 'Lobster', cursive;
     display: none;
     /*margin-right: -20%;*/
@@ -44,7 +46,7 @@
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    background-color: #111111;
+    background-color: #ffffff;
     cursor: pointer;
 }
 
@@ -69,18 +71,68 @@
 #navbar .container .nav-link a{
     color: white;
     font-size: 30px;
+    transition: all .5s;
 }
 
 #navbar .container .nav-link a:hover{
-    color: #000000;
-    text-shadow: 8px 8px #ffffff;
+    font-size: 40px;
 }
 
 #navbar .container ul li{
     margin-bottom: 20px;
 }
 
-@media (max-width: 770px){
+
+#home{
+    height: 100vh;
+    background: url(Images/Home_Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#home .heading{
+    height: 100vh;
+}
+
+#home h1{
+    line-height: 100vh;
+    text-align: center;
+    /*padding: 250px 420px;*/
+    font-family: 'Cookie', cursive;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    font-size: 100px;
+    color: #c6e2ff;
+    animation: neon .08s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+      text-shadow:
+      0 0 10px rgba(202,228,225,0.92),
+      0 0 30px rgba(202,228,225,0.34),
+      0 0 12px rgba(30,132,242,0.52),
+      0 0 21px rgba(30,132,242,0.92),
+      0 0 34px rgba(30,132,242,0.78),
+      0 0 54px rgba(30,132,242,0.92);
+    }
+    to {
+      text-shadow:
+      0 0 10px rgba(202,228,225,0.98),
+      0 0 30px rgba(202,228,225,0.42),
+      0 0 12px rgba(30,132,242,0.58),
+      0 0 22px rgba(30,132,242,0.84),
+      0 0 38px rgba(30,132,242,0.88),
+      0 0 60px rgba(30,132,242,1);
+    }
+  }
+
+@media (max-width: 767px){
+    #home{
+        background-size: cover;
+    }
+
     #navbar{
         height: 100%;
     }
