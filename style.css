@@ -30,7 +30,8 @@
     border-bottom-left-radius: 10px;
     background: linear-gradient(to right, #CC2B5E, #733A88);
     font-family: 'Lobster', cursive;
-    margin-right: -20%;
+    display: none;
+    /*margin-right: -20%;*/
 }
 
 #navbar .container{
