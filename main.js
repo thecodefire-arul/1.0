@@ -1,18 +1,4 @@
-/*var elem = document.getElementById('navbar');
-var menu = document.getElementById('menu');
-
-function display(){
-    elem.style.transition = "all 1s";
-    elem.style.marginRight = "0";
-    menu.style.display = "none";
-}
-
-function hide(){
-    elem.style.transition = "all 1s";
-    elem.style.marginRight = "-20%";
-    menu.style.display = "block";
-}*/
-
+//Navbar
 
 $(document).ready(function(){
     $("#menu").click(function(){
@@ -28,3 +14,7 @@ $(document).ready(function(){
     $("#menu").show(1000);
   });
 });
+
+
+//Change Home Background
+
