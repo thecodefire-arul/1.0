@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Cookie);
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
 
 *{
     margin: 0;
@@ -23,15 +26,15 @@
 
 .progress-bar {
     height: 8px;
-    background: linear-gradient(to right, red, orange);
+    background: linear-gradient(to right, #fd57bf, #ffe838);
     width: 0%;
 }
 
-/*body::-webkit-scrollbar{
-    width: 1em;
+body::-webkit-scrollbar{
+    display: none;
 }
 
-body::-webkit-scrollbar-track{
+/*body::-webkit-scrollbar-track{
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -170,17 +173,113 @@ body::-webkit-scrollbar-thumb {
     right: 0;
 }
 
+#chat .icon{
+    display: block;
+}
+
 #chat .icon img{
     height: 50px;
     width: 50px;
 }
 
-@media (max-width: 767px){
-    #home{
-        background-size: cover;
-    }
+#desc{
+    height: 100vh;
+}
 
-    #navbar{
-        height: 100%;
-    }
+#desc .desc{
+    height: 100vh;
+    flex: 0 0 50%;
+    display: flex;
+}
+
+#desc .desc .para{
+    width: 100%;
+    height: 100vh;
+    background: url(Images/leading_plateform1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#desc .desc .para h1{
+    font-family: 'Permanent Marker', cursive;
+    background: linear-gradient(to right, #ec008c, #fc6767);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-weight: 700;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+#desc .desc .img{
+    width: 100%;
+    height: 100vh;
+}
+
+#desc .desc .img img{
+    width: 100%;
+    height: 100vh;
+}
+
+#ideas{
+    height: 100vh;
+    background: url(Images/idea.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#ideas .text{
+    width: 50%;
+    float: right;
+    height: 100vh;
+}
+
+#ideas .text h1{
+    font-size: 80px;
+    font-family: 'Kaushan Script', cursive;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#skills{
+    height: 100vh;
+    background: url(Images/skills.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#skills .text{
+    height: 100vh;
+    border: 1px solid black;
+    width: 100%;
+}
+
+#skills .text h1{
+    background: linear-gradient(to right, red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#skills .text .sub1{
+    margin-top: 300px;
+    float: left;
+    width: 30%;
+    margin-left: -30px;
+}
+
+#skills .text .sub2{
+    margin-top: 300px;
+    float: right;
+    width: 30%;
+}
+
+#skills .text .sub2 h1{
+    margin-left: 40px;
 }
