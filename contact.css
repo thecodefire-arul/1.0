@@ -189,6 +189,7 @@ body::-webkit-scrollbar{
     border: none;
     font-family: 'Fredoka One', cursive;
     width: 80%;
+    height: 100%;
     margin-bottom: 30px;
     opacity: .5;
 
@@ -257,4 +258,105 @@ body::-webkit-scrollbar{
 #contact .form .button:hover::after{
     transform: scaleX(2) scaleY(2);
     opacity: 1;
+}
+
+@media (max-width: 768px){
+    body{
+        background-size: 100% 100%;
+    }
+
+    #navbar{
+        width: 250px;
+        height: 100%;
+    }
+
+    #navbar .container{
+        padding: 5px;
+    }
+
+    #navbar .container h1{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    #navbar .container .nav-link a{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    .heading h1{
+        font-size: 60px;
+    }
+
+    #contact{
+        flex: 0 0 100%;
+        display: block;
+    }
+
+    #contact .details h1{
+        font-size: 25px;
+    }
+
+    #contact .details h3{
+        font-size: 20px;
+    }
+
+    #contact .form input{
+        left: 38%;
+        width: 50%;
+    }
+
+    #contact .form textarea{
+        margin-left: 38%;
+        width: 50%;
+    }
+
+    #contact .form .button{
+        margin-left: 38%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 500px){
+    #navbar{
+        width: 250px;
+    }
+
+    #navbar .container h1{
+        font-size: 40px;
+        margin-bottom: 80px;
+    }
+
+    .heading h1{
+        font-size: 40px;
+    }
+
+    #contact{
+        flex: 0 0 100%;
+        display: block;
+    }
+
+    #contact .details h1{
+        font-size: 20px;
+    }
+
+    #contact .details h3{
+        font-size: 15px;
+    }
+
+    #contact .form input{
+        left: 23%;
+        width: 80%;
+    }
+
+    #contact .form textarea{
+        margin-left: 23%;
+        width: 80%;
+    }
+
+    #contact .form .button{
+        margin-left: 38%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
 }

@@ -12,6 +12,7 @@
     text-decoration: none;
     list-style: none;
     user-select: none;
+    scroll-behavior: smooth;
 }
 
 .header{
@@ -303,4 +304,156 @@ body::-webkit-scrollbar-thumb {
     font-family: 'Fredoka One', cursive;
     text-transform: uppercase;
     font-size: 50px;
+}
+
+
+
+@media (max-width: 768px){
+    #navbar{
+        width: 250px;
+    }
+
+    #navbar .container h1{
+        font-size: 40px;
+        margin-bottom: 80px;
+    }
+
+    #home{
+        background-size: 100% 100%;
+    }
+
+    #home .heading{
+        height: 100% 100%;
+    }
+
+    #home .heading h1{
+        font-size: 80px;
+        letter-spacing: 4px;
+    }
+
+    #desc .desc .para{
+        background-size: 100% 100%;
+    }
+
+    #desc .desc .para h1{
+        margin-top: 80px;
+        font-size: 60px;
+        letter-spacing: 2px;
+    }
+
+    #desc .desc .img{
+        background-size: 100% 100%;
+    }
+
+    #ideas{
+        background-size: 100% 100%;
+    }
+
+    #ideas .text h1{
+        margin-top: 80px;
+        font-size: 60px;
+    }
+
+    #skills{
+        background-size: 100% 100%;
+    }
+
+    #skills .text .sub1{
+        width: 30%
+    }
+
+    #skills .text .sub1 h1{
+        font-size: 30px;
+    }
+
+    #skills .text .sub2{
+        width: 30%
+    }
+
+    #skills .text .sub2 h1{
+        font-size: 30px;
+    }
+
+    #connection{
+        background-size: 100% 100%;
+    }
+
+    #connection .text h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 500px){
+    #navbar{
+        width: 250px;
+    }
+
+    #navbar .container h1{
+        font-size: 40px;
+        margin-bottom: 80px;
+    }
+
+    #home{
+        background-size: 100% 100%;
+    }
+
+    #home .heading{
+        height: 100% 100%;
+    }
+
+    #home .heading h1{
+        font-size: 60px;
+        letter-spacing: 2px;
+    }
+
+    #desc .desc .para{
+        background-size: 100% 100%;
+    }
+
+    #desc .desc .para h1{
+        margin-top: 80px;
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    #desc .desc .img{
+        background-size: 100% 100%;
+    }
+
+    #ideas{
+        background-size: 100% 100%;
+    }
+
+    #ideas .text h1{
+        margin-top: 80px;
+        font-size: 45px;
+    }
+
+    #skills{
+        background-size: 100% 100%;
+    }
+
+    #skills .text .sub1{
+        width: 40%
+    }
+
+    #skills .text .sub1 h1{
+        font-size: 30px;
+    }
+
+    #skills .text .sub2{
+        width: 40%
+    }
+
+    #skills .text .sub2 h1{
+        font-size: 30px;
+    }
+
+    #connection{
+        background-size: 100% 100%;
+    }
+
+    #connection .text h1{
+        font-size: 45px;
+    }   
 }
