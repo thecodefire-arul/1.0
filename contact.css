@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Black+Ops+One);
+@import url(https://fonts.googleapis.com/css?family=Nova+Mono);
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: url(Images/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.menu{
+    right: 0;
+    float: right;
+    padding: 30px;
+    position: fixed;
+}
+
+.menu .fa{
+    font-size: 25px;
+    border-radius: 5px;
+    color: #FEBD01;
+    cursor: pointer;
+}
+
+#navbar{
+    right: 0;
+    position: fixed;
+    float: right;
+    height: 100vh;
+    width: 20%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: transparent;
+    font-family: 'Lobster', cursive;
+    display: none;
+    z-index: 100;
+}
+
+#navbar .button{
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: -15%;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#navbar .button .fa{
+    line-height: 23px;
+    font-size: 15px;
+    /*display: none;*/
+    color: red;
+    font-weight: 700;
+}
+
+#navbar .container{
+    text-align: center;
+    padding: 20px;
+}
+
+#navbar .container h1{
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+#navbar .container .nav-link a{
+    color: white;
+    font-size: 30px;
+    transition: all .5s;
+}
+
+#navbar .container .nav-link a:hover{
+    font-size: 40px;
+}
+
+#navbar .container ul li{
+    margin-bottom: 20px;
+    z-index: 101;
+    display: block;
+}
+
+.heading{
+    font-family: 'Black Ops One', cursive;
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+}
+
+.heading h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: white;
+}
+
+#contact{
+    height: 80vh;
+    flex: 0 0 50%;
+    display: flex;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+#contact .details{
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-family: 'Nova Mono', monospace;
+    width: 100%;
+    max-height: 80vh;
+    text-align: center;
+    padding: 80px 0;
+}
+
+#contact .details h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#contact .details h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#contact .details .social-links{
+    margin-top: 40px;
+}
+
+#contact .details .social-links .fa{
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #000000;
+    transition: all .5s;
+}
+
+#contact .details .social-links .fa:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#contact .form{
+    justify-content: center;
+    width: 80%;
+    height: 80vh;
+}
+
+#contact .form input{
+    font-family: 'Fredoka One', cursive;
+    color: black;
+    height: 30px;
+    margin: 30px 0;
+    display: block;
+    position: relative;
+    border: none;
+    width: 80%;
+    opacity: .5;
+}
+
+#contact .form input::placeholder{
+    color: #000000;
+    font-size: 12px;
+    font-family: 'Fredoka One', cursive;
+}
+
+#contact .form textarea{
+    border: none;
+    font-family: 'Fredoka One', cursive;
+    width: 80%;
+    margin-bottom: 30px;
+    opacity: .5;
+
+}
+
+#contact .form textarea::placeholder{
+    font-size: 12px;
+    font-family: 'Fredoka One', cursive;
+    color: #000000;
+}
+
+#contact .form .button{
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    float: left;
+    border-radius: 5px;
+    background-color: #ffffff;
+    height: 30px;
+    width: 50%;
+    font-family: 'Fredoka One', cursive;
+    color: #000000;
+    animation: moveInButton 2s ease;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInButton{
+    0%{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#contact .form .button:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#contact .form .button:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#contact .form .button::after{
+    background-color: #ffffff;
+}
+
+#contact .form .button:hover::after{
+    transform: scaleX(2) scaleY(2);
+    opacity: 1;
+}

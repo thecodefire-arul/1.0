@@ -28,6 +28,3 @@ $(document).ready(function(){
   });
 });
 
-
-//Change Home Background
-

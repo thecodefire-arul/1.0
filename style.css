@@ -4,12 +4,14 @@
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 @import url(https://fonts.googleapis.com/css?family=Orbitron);
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
 
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+    user-select: none;
 }
 
 .header{
@@ -253,7 +255,6 @@ body::-webkit-scrollbar-thumb {
 
 #skills .text{
     height: 100vh;
-    border: 1px solid black;
     width: 100%;
 }
 
@@ -282,4 +283,24 @@ body::-webkit-scrollbar-thumb {
 
 #skills .text .sub2 h1{
     margin-left: 40px;
+}
+
+#connection{
+    height: 100vh;
+    background: url(Images/communicate.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+}
+
+#connection .text{
+    padding: 80px 10px;
+    text-align: center;
+}
+
+#connection .text h1{
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    font-size: 50px;
 }
