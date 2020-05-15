@@ -5,6 +5,8 @@
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 @import url(https://fonts.googleapis.com/css?family=Orbitron);
 @import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+
 
 *{
     margin: 0;
@@ -166,6 +168,38 @@ body::-webkit-scrollbar-thumb {
       0 0 38px rgba(30,132,242,0.88),
       0 0 60px rgba(30,132,242,1);
     }
+}
+
+#modal-box{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    border-radius: 5px;
+    font-family: 'Squada One', cursive;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#modal-box .container{
+    width: 40%;
+    position: fixed;
+    border-radius: 5px;
+    text-align: center;
+    background: -webkit-linear-gradient(to right, #f7971e, #ffd200);
+    background: linear-gradient(to right, #f7971e, #ffd200);
+    left: 83%;
+    top: 85%;
+    transform: translate(-85%,-88%);
+    transition: .5s ease;
+}
+
+#modal-box .container h3{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
 }
 
 #chat{

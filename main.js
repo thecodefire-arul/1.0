@@ -28,3 +28,19 @@ $(document).ready(function(){
   });
 });
 
+//Modal Box
+
+$(document).ready(function(){
+  function showWindow(){
+      $('#modal-box').show();
+      //Auto Hide
+      setTimeout(hideWindow,10000);
+
+  }
+
+  function hideWindow(){
+      $('#modal-box').hide();
+  }
+
+  setTimeout(showWindow,5000);
+})
