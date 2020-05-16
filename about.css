@@ -276,6 +276,14 @@ section{
         margin-bottom: 20px;
     }
 
+    #navbar .container ul li{
+        margin-bottom: 20px;
+    }
+
+    #navbar .container .nav-link a{
+        font-size: 20px;
+    }
+
     #local-navbar{
         padding: 10px;
     }
