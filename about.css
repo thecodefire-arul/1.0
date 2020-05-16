@@ -145,6 +145,7 @@ section{
 }
 
 #local-navbar .container ul li a{
+    font-size: 15px;
     border-radius: 10px;
     padding: 10px;
     color: #000000;
@@ -259,4 +260,63 @@ section{
     color: #b8e994;
     background-color: transparent;
     transform: scale(1.5);
+}
+
+@media (max-width: 768px){
+    .menu .fa{
+        font-size: 20px;
+    }
+
+    #navbar{
+        width: 250px;
+    }
+
+    #navbar .container h1{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    #local-navbar{
+        padding: 10px;
+    }
+
+    #vision{
+        flex: 0 0 100%;
+        display: block;
+    }
+
+    #vision .text{
+        width: 100%;
+        height: 10%;
+    }
+
+    #vision .text h1{
+        font-size: 30px;
+    }
+
+    #vision .img{
+        width: 100%;
+        height: 50%;
+    }
+
+    #mission{
+        flex: 0 0 100%;
+        display: block;
+    }
+
+    #mission .text{
+        width: 100%;
+        height: 10%;
+    }
+
+    #mission .text h1{
+        font-size: 30px;
+    }
+
+    #mission .img{
+        width: 100%;
+        height: 50%;
+    }
+
+    
 }
