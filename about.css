@@ -1,0 +1,262 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Crete+Round);
+@import url(https://fonts.googleapis.com/css?family=Kreon);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+}
+
+.menu{
+    z-index: 101;
+    right: 0;
+    float: right;
+    padding: 30px;
+    position: fixed;
+}
+
+.menu .fa{
+    font-size: 25px;
+    border-radius: 5px;
+    color: #FEBD01;
+    cursor: pointer;
+}
+
+#navbar{
+    z-index: 200;
+    right: 0;
+    position: fixed;
+    float: right;
+    height: 100vh;
+    width: 20%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: transparent;
+    font-family: 'Lobster', cursive;
+    display: none;
+}
+
+#navbar .button{
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: -15%;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#navbar .button .fa{
+    line-height: 23px;
+    font-size: 15px;
+    color: red;
+    font-weight: 700;
+}
+
+#navbar .container{
+    text-align: center;
+    padding: 20px;
+}
+
+#navbar .container h1{
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+#navbar .container .nav-link a{
+    color: white;
+    font-size: 30px;
+    transition: all .5s;
+}
+
+#navbar .container .nav-link a:hover{
+    font-size: 40px;
+}
+
+#navbar .container ul li{
+    margin-bottom: 20px;
+    z-index: 101;
+    display: block;
+}
+
+#blur{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: #0008;
+    display: none;
+}
+
+.text{
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.text h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.img{
+    width: 100%;
+    height: 100vh;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+}
+
+#local-navbar{
+    z-index: 50;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: fixed;
+}
+
+#local-navbar .container{
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#local-navbar .container ul{
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+#local-navbar .container ul li a{
+    border-radius: 10px;
+    padding: 10px;
+    color: #000000;
+    font-family: 'Pacifico', cursive;
+    transition: all .5s ease;
+}
+
+#local-navbar .container ul li a:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#vision{
+    height: 100vh;
+    width: 100%;
+    flex: 0 0 50%;
+    display: flex;
+}
+
+#vision .text{
+    font-family: 'Crete Round', serif;
+}
+
+#mission{
+    height: 100vh;
+    width: 100%;
+    flex: 0 0 50%;
+    display: flex;
+    font-family: 'Kreon', serif;
+}
+
+#mission .text{
+    padding: 0;
+}
+
+#mission .text h1{
+    font-size: 50px;
+}
+
+#team{
+    height: 100vh;
+    display: flex;
+    font-family: "Open Sans",sans-serif;
+}
+
+#team .person{
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: .6s;
+}
+
+#team .person:hover{
+    flex: 3;
+}
+
+#team .person-pic{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(80%);
+    transition: .3s;
+}
+
+#team .person:hover .person-pic{
+    filter: grayscale(0);
+}
+
+#team .person-info{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .2s;
+}
+
+#team .person:hover .person-info{
+    opacity: 1;
+    bottom: 60px;
+    transition-delay: .6s;
+}
+
+#team .person-info h2{
+    font-size: 20px;
+    color: #fff;
+}
+
+#team .person-info p{
+    color: #b8e994;
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+#team .socialmedia a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #333;
+    background-color: #b8e994;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 6px;
+    font-size: 18px;
+    transition: .3s linear;
+}
+
+#team .socialmedia a:hover{
+    color: #b8e994;
+    background-color: transparent;
+    transform: scale(1.5);
+}

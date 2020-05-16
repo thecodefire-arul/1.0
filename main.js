@@ -16,6 +16,9 @@ $(document).ready(function(){
       $("#navbar").show(1000);
       $("#menu").hide(1000);
       $("#chat").hide(1000);
+      $("#blur").show();
+      //Stop Scroll
+      $('html body').css('overflow','hidden');
     });
   });
 
@@ -25,6 +28,9 @@ $(document).ready(function(){
     $("#navbar").hide(1000);
     $("#menu").show(1000);
     $("#chat").show(1000);
+    $("#blur").hide();
+      // ScrollOn
+      $('html body').css('overflow','scroll');
   });
 });
 
