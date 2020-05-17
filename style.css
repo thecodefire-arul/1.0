@@ -140,6 +140,7 @@ body::-webkit-scrollbar-thumb {
     background: url(Images/Home_Background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #home .heading{
