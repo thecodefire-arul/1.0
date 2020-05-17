@@ -6,6 +6,7 @@
 @import url(https://fonts.googleapis.com/css?family=Orbitron);
 @import url(https://fonts.googleapis.com/css?family=Fredoka+One);
 @import url(https://fonts.googleapis.com/css?family=Squada+One);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
 
 *{
@@ -139,7 +140,6 @@ body::-webkit-scrollbar-thumb {
     background: url(Images/Home_Background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 #home .heading{
@@ -209,6 +209,71 @@ body::-webkit-scrollbar-thumb {
     font-size: 25px;
     font-weight: 700;
     color: white;
+}
+
+#right{
+    background-color: #1B4F72;
+    background-attachment: fixed;
+    width: 80%;
+    height: 100vh;
+    flex: 0 0 50%;
+    display: flex;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#right .text{
+    width: 100%;
+    text-align: start;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+#right .text h1{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#right .text p{
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #F0F3F4;
+    font-size: 15px;
+}
+
+#right .button{
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid #ffffff;
+    width: 30%;
+    height: 20px;
+    text-align: center;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#right .button:hover{
+    background-color: #ffffff;
+}
+
+#right .button:hover a{
+    color: #1B4F72;
+}
+
+#right .button a{
+    color: #ffffff;
+}
+
+#right .img{
+    width: 100%;
+}
+
+#right .img img{
+    height: 60%;
+    width: 100%;
+    margin-left: 40%;
+    margin-top: 30%;
 }
 
 #chat{
