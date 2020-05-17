@@ -275,6 +275,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     margin-left: 40%;
     margin-top: 30%;
+    border-radius: 10px;
 }
 
 #chat{
@@ -440,6 +441,14 @@ body::-webkit-scrollbar-thumb {
         letter-spacing: 4px;
     }
 
+    #right .text h1{
+        font-size: 20px;
+    }
+
+    #right .text{
+        margin-top: 5%;
+    }
+
     #desc .desc .para{
         background-size: 100% 100%;
     }
@@ -513,6 +522,10 @@ body::-webkit-scrollbar-thumb {
     #home .heading h1{
         font-size: 60px;
         letter-spacing: 2px;
+    }
+
+    #right .button{
+        width: 100%;
     }
 
     #desc .desc .para{
