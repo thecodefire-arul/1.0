@@ -262,6 +262,349 @@ section{
     transform: scale(1.5);
 }
 
+#footer p{
+    font-size: 12px;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer{
+    padding: 3%;
+    font-family: sans-serif;
+    height: 55vh;
+    flex: 0 0 25%;
+    display: flex;
+}
+
+#footer{
+    color: #ffffff;
+    font-family: sans-serif;
+    background-color: #000000;
+}
+
+#footer input{
+    margin-top: 10px;
+    width: 20em;
+    height: 30%;
+    padding: 5%;
+    display: flex;
+}
+
+#footer .first h1{
+    font-size: 30px;
+}
+
+#footer .first .input{
+    display: flex;
+    margin: 20px 0;
+}
+
+#footer .first .input .sub-second p{
+    margin-left: 60px;
+}
+
+#footer .first .input .sub-second input{
+    margin-left: 60px;
+}
+
+#footer .button{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    transition: all .5s ease;
+}
+
+#footer .button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#footer .button p{
+    padding: 1%;
+}
+
+#footer .first .para{
+    margin: 20px 0;
+}
+
+#footer .first .para p{
+    font-weight: 400;
+}
+
+#footer .first .para p a{
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+#footer .first ul{
+    margin-top: 20px;
+    display: flex;
+}
+
+#footer .first ul li{
+    border: 1px solid #ffffff;
+    text-align: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin: 0 10px;
+    transition: all .5s ease;
+}
+
+#footer .first ul li:hover{
+    background-color: #ffffff;
+}
+
+#footer .first ul li:hover a{
+    color: #000000;
+}
+
+#footer .first ul li a{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#footer .second{
+    margin-left: 60px;
+}
+
+#footer .second p a{
+    margin-top: 20px;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#footer .third{
+    margin-left: 60px;
+}
+
+#footer .third p a{
+    display: block;
+    margin-top: 20px;
+}
+
+#footer .fourth{
+    margin-left: 60px;
+}
+
+#footer .fourth p a{
+    display: block;
+    margin-top: 20px;
+}
+
+#footer .sub{
+    border-top: 1px solid #2e2e2e;
+    height: 6vh;
+    background-color: #000000;
+    color: #5a5a5a;
+}
+
+#footer .sub p{
+    padding: 0 5em;
+    color: #313131;
+    font-weight: 900;
+    text-align: center;
+    margin: 0 40px;
+    line-height: 6vh;
+}
+
+#footer .sub p a{
+    color: #313131;
+    font-weight: 900;
+    text-align: center;
+    margin: 0 40px;
+    line-height: 6vh;
+}
+
+#footer .sub .fa{
+    margin-left: 5px;
+    color: #343434;
+}
+
+#footer .sub-two{
+    border-top: 1px solid #262626;
+    height: 2vh;
+    background-color: #000000;
+    padding: 1% 5%;
+}
+
+#footer .sub-two p,
+#footer .sub-two p a{
+    color: #3a3a3a;
+    font-weight: 900;
+
+}
+
+
+
+@media (max-width: 768px){
+    #navbar{
+        width: 250px;
+    }
+
+    #navbar .container h1{
+        font-size: 40px;
+        margin-bottom: 80px;
+    }
+
+    #home{
+        background-size: 100% 100%;
+    }
+
+    #home .heading{
+        height: 100% 100%;
+    }
+
+    #home .heading h1{
+        font-size: 80px;
+        letter-spacing: 4px;
+    }
+
+    #right .text h1{
+        font-size: 20px;
+    }
+
+    #right .text{
+        margin-top: 5%;
+    }
+
+    #desc .desc .para{
+        background-size: 100% 100%;
+    }
+
+    #desc .desc .para h1{
+        margin-top: 80px;
+        font-size: 60px;
+        letter-spacing: 2px;
+    }
+
+    #desc .desc .img{
+        background-size: 100% 100%;
+    }
+
+    #ideas{
+        background-size: 100% 100%;
+    }
+
+    #ideas .text h1{
+        margin-top: 80px;
+        font-size: 60px;
+    }
+
+    #skills{
+        background-size: 100% 100%;
+    }
+
+    #skills .text .sub1{
+        width: 30%
+    }
+
+    #skills .text .sub1 h1{
+        font-size: 30px;
+    }
+
+    #skills .text .sub2{
+        width: 30%
+    }
+
+    #skills .text .sub2 h1{
+        font-size: 30px;
+    }
+
+    #connection{
+        background-size: 100% 100%;
+    }
+
+    #connection .text h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 500px){
+    #navbar{
+        width: 250px;
+    }
+
+    #navbar .container h1{
+        font-size: 40px;
+        margin-bottom: 80px;
+    }
+
+    #home{
+        background-size: 100% 100%;
+    }
+
+    #home .heading{
+        height: 100% 100%;
+    }
+
+    #home .heading h1{
+        font-size: 60px;
+        letter-spacing: 2px;
+    }
+
+    #right .button{
+        width: 100%;
+    }
+
+    #desc .desc .para{
+        background-size: 100% 100%;
+    }
+
+    #desc .desc .para h1{
+        margin-top: 80px;
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    #desc .desc .img{
+        background-size: 100% 100%;
+    }
+
+    #ideas{
+        background-size: 100% 100%;
+    }
+
+    #ideas .text h1{
+        margin-top: 80px;
+        font-size: 45px;
+    }
+
+    #skills{
+        background-size: 100% 100%;
+    }
+
+    #skills .text .sub1{
+        width: 40%
+    }
+
+    #skills .text .sub1 h1{
+        font-size: 30px;
+    }
+
+    #skills .text .sub2{
+        width: 40%
+    }
+
+    #skills .text .sub2 h1{
+        font-size: 30px;
+    }
+
+    #connection{
+        background-size: 100% 100%;
+    }
+
+    #connection .text h1{
+        font-size: 45px;
+    }   
+}
+
 @media (max-width: 768px){
     .menu .fa{
         font-size: 20px;
